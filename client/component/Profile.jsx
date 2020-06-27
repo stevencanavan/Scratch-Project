@@ -57,15 +57,8 @@ class Profile extends Component {
             <button className="profileButton" type='submit'>Confirm Profile</button>
           </form>
         </div>
-      );
-    }
-  }
-
-  render() {
-    //(if not in edit mode)
-    return (
-      <div>
-        {/* {this.props.signedIn && !this.props.inEditMode ? (
+        <div>
+          {/* {this.props.signedIn && !this.props.inEditMode ? (
           <div>
             <ul>
               <li>Username: {this.props.currentUser.username}</li>
@@ -99,10 +92,10 @@ class Profile extends Component {
             </form>
           </div>
         ) : null} */}
-        {this.renderProfile()}
-      </div>
+          {this.renderProfile()}
+        </div>
     );
+    }
   }
-}
 
-export default Profile;
+  export default Profile;
